@@ -1,11 +1,8 @@
 """
 pyVNC core modules
 
-To avoid circular import issues, only import what's absolutely necessary.
-For specific modules, import them directly:
-  from pyVNC.pyVNC.Client import Client
-  from pyVNC.pyVNC.Buffer import DisplayBuffer
-  etc.
+To avoid circular import issues, keep this minimal.
+For specific modules, import them directly when needed.
 """
 
 # Keep it minimal to avoid circular imports

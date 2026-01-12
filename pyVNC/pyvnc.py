@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import argparse
 
-from pyVNC.Client import Client
+from .Client import Client
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -23,5 +23,3 @@ if __name__ == '__main__':
                     gui_with_array=False
                  )
     vnc.start()
-
-

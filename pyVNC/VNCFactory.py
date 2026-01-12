@@ -1,7 +1,7 @@
 import pygame
 from twisted.internet import reactor
-from pyVNC.RFBToGUI import RFBToGUIeightbits, RFBToGUI
-from pyVNC.rfb import *
+from .RFBToGUI import RFBToGUIeightbits, RFBToGUI
+from .rfb import *
 import logging
 logger = logging.getLogger("pyVNC")
 

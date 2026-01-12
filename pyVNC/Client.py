@@ -2,9 +2,9 @@ from threading import Thread
 from twisted.internet import reactor, task
 import pygame
 import time
-from pyVNC import constants
-from pyVNC.Buffer import DisplayBuffer, ArrayBuffer
-from pyVNC.VNCFactory import VNCFactory
+from . import constants
+from .Buffer import DisplayBuffer, ArrayBuffer
+from .VNCFactory import VNCFactory
 import logging
 logger = logging.getLogger("pyVNC")
 

@@ -21,7 +21,7 @@ from twisted.internet import protocol
 
 # encoding-type
 # for SetEncodings()
-from pyVNC import pyDes
+from . import pyDes
 
 RAW_ENCODING = 0
 COPY_RECTANGLE_ENCODING = 1
@@ -592,7 +592,7 @@ class RFBClient(Protocol, TimeoutMixin):
     def commit_update(self, rectangles=None):
         """called after a series of updateRectangle(), copy_rectangle()
            or fillRectangle() are finished.
-           typicaly, here is the place to request the next screen 
+           typicaly, here is the place to request the next screen
            update with FramebufferUpdateRequest(incremental=1).
            argument is a list of tuples (x,y,w,h) with the updated
            rectangles."""

@@ -1,9 +1,9 @@
 import pygame
 import struct
-import pyVNC.rfb
+from . import rfb
 
 
-class RFBToGUI(pyVNC.rfb.RFBClient):
+class RFBToGUI(rfb.RFBClient):
     """RFBClient protocol that talks to the GUI app"""
 
     def __init__(self):

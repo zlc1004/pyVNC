@@ -1,6 +1,6 @@
 import pygame
 import numpy as np
-from pyVNC.constants import *
+from .constants import *
 from twisted.internet import reactor
 
 
@@ -130,4 +130,3 @@ class DisplayBuffer(Buffer):
 
             return not seen_events
         return not seen_events
-
